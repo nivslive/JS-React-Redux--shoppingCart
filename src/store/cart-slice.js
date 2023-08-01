@@ -27,7 +27,7 @@ const cartSlice = createSlice({
 
         },
         setShowCart(state) {
-            state.showCart = state.showCart === true ? false : true;
+            state.showCart = !state.showCart;
         },
     }
 });
