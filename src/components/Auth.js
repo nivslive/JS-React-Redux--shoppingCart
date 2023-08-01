@@ -6,7 +6,8 @@ import {authActions} from '../store/auth-slice';
 const Auth = () => {
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
-    e.preventDefault(authActions.login());
+    e.preventDefault();
+    dispatch(authActions.login());
   };
   return (
     <div className="container">
